@@ -130,7 +130,7 @@ const Payment = () => {
         };
     
         try {
-            let res = await axios.post("http://localhost:8087/api/order", { ...paymentData });
+            let res = await axios.post("https://brogan2-o-newbackend.onrender.com/api/order", { ...paymentData });
             console.log(res.data);
     
             // If COD, just confirm the order
